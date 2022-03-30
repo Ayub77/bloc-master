@@ -96,7 +96,7 @@ class _HomePageState extends State<HomePage> {
       children: [
         SlidableAction(
           onPressed: (value){
-          Navigator.of(context).push(MaterialPageRoute(builder: (context) => UpdateAndAdd(title: "Update",id: post.id.toString(),))).then((value){
+          Navigator.of(context).push(MaterialPageRoute(builder: (context) => UpdateAndAdd(title: "Update",id: post.id.toString(),post: post,))).then((value){
              if(value){
                _apiPostList();
              }
